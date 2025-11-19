@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>fAssignment</title>
+
+<script type="text/javascript">
+
+window.alert("Number 1 & 2 should be numeric value!");
+var n1=parseFloat(prompt("Enter the First number: "));
+var n2=parseFloat(prompt("Enter the Second number: "));
+var pValue=parseFloat(prompt("Enter the value of the product of the numbers: "));
+
+var product =(n1*n2);
+
+var comment="";
+
+
+
+if(pValue==product)
+comment="True";
+else if(pValue<product)
+comment="Low";
+else 
+comment="High";
+
+document.write("<table border='1'>");
+document.write("<tr><th>Number1</th><th>Number2</th><th>inserted Value</th><th>Comments</th></tr>");
+document.write("<tr>");
+document.write("<td style ='color:red'>"+n1+"</td>");
+document.write("<td style ='color:red'>"+n2+"</td>");
+document.write("<td style ='color:red'>"+pValue+"</td>");
+document.write("<td style ='color:red;font-weight:bold;'>"+comment+"</td>");
+document.write("</tr>");
+document.write("</table>");
+
+
+
+</script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

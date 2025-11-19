@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Lab1</title>
+<script>
+document.write("<table border='1' width='300'>");
+document.write("<tr><th>Salary:</th><th>Description:</th></tr>");
+for(var i=1;i<=4;i++){
+var salary= parseInt(window.prompt("Insert the salary"+i));
+if (isNaN(salary)){
+window.alert("Not a number");
+i--;
+continue;
+}
+else if (salary <0)
+document.write("<tr><td>"+salary+"</td><td>Invalid salary(negative)</td></tr>");
+else if (salary >=0 && salary <5000)
+document.write("<tr style='background-color:pink'><td>"+salary+"</td><td>Low salary</td></tr>");
+else if (salary >=5000 && salary<=10000)
+document.write("<tr><td>"+salary+"</td><td>Avg salary</td></tr>");
+else 
+document.write("<tr style='background-color:lightblue'><td>"+salary+"</td><td>High salary</td></tr>");
+}
+document.write("</table>");
+</script>
+
+
+
+
+</head>
+
+<body></body>
+
+</html>
