@@ -1,5 +1,5 @@
 # Projects
 Project Description
-My project's ! (^ \_____/ ^)
+My project's ! (^ _____ ^)
 
 
